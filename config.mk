@@ -1,5 +1,5 @@
 NAME = dwmstatus
-VERSION = 1.2
+VERSION = 0.1.0
 
 # Customize below to fit your system
 
@@ -17,13 +17,7 @@ LIBS = -L/usr/lib -lc -L${X11LIB} -lX11
 # flags
 CPPFLAGS = -DVERSION=\"${VERSION}\"
 CFLAGS = -g -std=c99 -pedantic -Wall -O0 ${INCS} ${CPPFLAGS}
-#CFLAGS = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}
 LDFLAGS = -g ${LIBS}
-#LDFLAGS = -s ${LIBS}
-
-# Solaris
-#CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"
-#LDFLAGS = ${LIBS}
 
 # compiler and linker
 CC = cc
